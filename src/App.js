@@ -9,11 +9,15 @@ const App = () => {
         src={pepper}
         alt='Pepper'
       />
-      Pepper
-      Pepper is a domestic shorthair.  This is funny because she has
-      long hair in real life.  She enjoys being pet until she's done with
-      that and bites me.  She also seems to like meetings, because she
-      joins almost all of them.
+      <h2>
+        Pepper
+      </h2>
+      <p>
+        Pepper is a domestic shorthair.  This is funny because she has
+        long hair in real life.  She enjoys being pet until she's done with
+        that and bites me.  She also seems to like meetings, because she
+        joins almost all of them.
+      </p>
       <button
         type='button'
       >
