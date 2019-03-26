@@ -1,28 +1,65 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import pepper from './pepper.jpg';
 import './App.css';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+const App = () => {
+  const [pets, addPet] = useState(0);
+
+  return (
+    <div className='container'>
+      <div className='card'>
+        <section className='card__image image'>
+          <div className='image__container'>
+            <img
+              src={pepper}
+              alt='Pepper'
+              className='image__img'
+            />
+          </div>
+        </section>
+        <section className='card__content content'>
+          <header className='content__header'>
+            <h2 className='content__heading'>
+              <span className='text text--copy text--lg'>
+                Pepper
+              </span>
+            </h2>
+          </header>
+          <section>
+            <p className='content__p'>
+              <span className='text text--copy text--sm'>
+                Pepper is a domestic shorthair.  This is funny because she has
+                long hair in real life.  She enjoys being pet until she's done with
+                that and bites me.  She also seems to like meetings, because she
+                joins almost all of them.
+              </span>
+            </p>
+          </section>
+          <footer className='content__footer'>
+            <div className='button'>
+              <div className='button__container'>
+                <button
+                  type='button'
+                  className='button__btn'
+                  onClick={() => {
+                    const newPets = pets + 1;
+                    addPet(newPets);
+                    alert(`Pepper successfully petted. Total pets: ${newPets}`);
+                  }}
+                >
+                  <div className='button__content'>
+                    <span className='text text--md'>
+                      Pet Pepper
+                    </span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </footer>
+        </section>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default App;
