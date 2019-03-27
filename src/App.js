@@ -6,11 +6,12 @@ const App = () => {
   return (
     <div>
       <div>
-        <div>
-          <div>
+        <div className='image'>
+          <div className='image__container'>
             <img
               src={pepper}
               alt='Pepper'
+              className='image__img'
             />
           </div>
         </div>
@@ -33,12 +34,13 @@ const App = () => {
             </p>
           </div>
           <footer>
-            <div>
-              <div>
+            <div className='button'>
+              <div className='button__container'>
                 <button
                   type='button'
+                  className='button__btn'
                 >
-                  <div>
+                  <div className='button__content'>
                     <span className='text text--md'>
                       Pet Pepper
                     </span>
