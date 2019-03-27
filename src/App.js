@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import pepper from './pepper.jpg';
 import './App.css';
 
 const App = () => {
+  const [pets, addPet] = useState(0);
+
   return (
     <div className='container'>
       <div className='card'>
@@ -39,6 +41,11 @@ const App = () => {
                 <button
                   type='button'
                   className='button__btn'
+                  onClick={() => {
+                    const newPets = pets + 1;
+                    addPet(newPets);
+                    alert(`Pepper successfully petted. Total pets: ${newPets}`);
+                  }}
                 >
                   <div className='button__content'>
                     <span className='text text--md'>

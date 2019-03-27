@@ -106,3 +106,33 @@
   transform: translateY(50%);
   width: 100%;
 }
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card__image {
+    flex: 0 0 240px;
+  }
+
+  .image__container {
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+
+  .image__img {
+    height: 100%;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    width: auto;
+  }
+
+  .button__container {
+    margin-left: 0;
+  }
+}
+
