@@ -1,3 +1,11 @@
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 32px 32px 0;
+  position: relative;
+  width: 100%;
+}
+
 .text {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
@@ -17,6 +25,35 @@
 
 .text--lg {
   font-size: 24px;
+}
+
+.card {
+  border: 2px solid #888;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.card__image {
+  flex: 0 1 auto;
+}
+
+.card__content {
+  flex: 0 1 auto;
+  padding: 16px;
+}
+
+.content__header {
+  padding-bottom: 8px;
+}
+
+.content__heading {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.content__footer {
+  padding-top: 24px;
 }
 
 .image__container {

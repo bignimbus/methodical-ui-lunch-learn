@@ -4,9 +4,9 @@ import './App.css';
 
 const App = () => {
   return (
-    <div>
-      <div>
-        <div className='image'>
+    <div className='container'>
+      <div className='card'>
+        <div className='card__image image'>
           <div className='image__container'>
             <img
               src={pepper}
@@ -15,16 +15,16 @@ const App = () => {
             />
           </div>
         </div>
-        <div>
-          <header>
-            <h2>
+        <div className='card__content content'>
+          <header className='content__header'>
+            <h2 className='content__heading'>
               <span className='text text--copy text--lg'>
                 Pepper
               </span>
             </h2>
           </header>
           <div>
-            <p>
+            <p className='content__p'>
               <span className='text text--copy text--sm'>
                 Pepper is a domestic shorthair.  This is funny because she has
                 long hair in real life.  She enjoys being pet until she's done with
@@ -33,7 +33,7 @@ const App = () => {
               </span>
             </p>
           </div>
-          <footer>
+          <footer className='content__footer'>
             <div className='button'>
               <div className='button__container'>
                 <button
