@@ -17,14 +17,14 @@ const App = () => {
         <div>
           <header>
             <h2>
-              <span>
+              <span className='text text--copy text--lg'>
                 Pepper
               </span>
             </h2>
           </header>
           <div>
             <p>
-              <span>
+              <span className='text text--copy text--sm'>
                 Pepper is a domestic shorthair.  This is funny because she has
                 long hair in real life.  She enjoys being pet until she's done with
                 that and bites me.  She also seems to like meetings, because she
@@ -39,7 +39,7 @@ const App = () => {
                   type='button'
                 >
                   <div>
-                    <span>
+                    <span className='text text--md'>
                       Pet Pepper
                     </span>
                   </div>
