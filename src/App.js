@@ -6,32 +6,32 @@ const App = () => {
   return (
     <div>
       <div>
-        <section>
+        <div>
           <div>
             <img
               src={pepper}
               alt='Pepper'
             />
           </div>
-        </section>
-        <section>
+        </div>
+        <div>
           <header>
             <h2>
-              <span>
+              <span className='text text--copy text--lg'>
                 Pepper
               </span>
             </h2>
           </header>
-          <section>
+          <div>
             <p>
-              <span>
+              <span className='text text--copy text--sm'>
                 Pepper is a domestic shorthair.  This is funny because she has
                 long hair in real life.  She enjoys being pet until she's done with
                 that and bites me.  She also seems to like meetings, because she
                 joins almost all of them.
               </span>
             </p>
-          </section>
+          </div>
           <footer>
             <div>
               <div>
@@ -39,7 +39,7 @@ const App = () => {
                   type='button'
                 >
                   <div>
-                    <span>
+                    <span className='text text--md'>
                       Pet Pepper
                     </span>
                   </div>
@@ -47,7 +47,7 @@ const App = () => {
               </div>
             </div>
           </footer>
-        </section>
+        </div>
       </div>
     </div>
   );

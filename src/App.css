@@ -1,0 +1,20 @@
+.text {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+
+.text--copy {
+  color: #333;
+}
+
+.text--sm {
+  font-size: 16px;
+}
+
+.text--md {
+  font-size: 20px;
+}
+
+.text--lg {
+  font-size: 24px;
+}
